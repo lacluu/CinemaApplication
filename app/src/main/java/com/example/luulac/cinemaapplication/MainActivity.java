@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        toolbar.setTitle("Khám Phá");
+        toolbar.setTitle(R.string.title_dashboard);
 
         adapter = new TabLayoutMainAdapter(getSupportFragmentManager());
 
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_shop:
-                    toolbar.setTitle("Khám Phá");
+                    toolbar.setTitle(R.string.title_dashboard);
 
                     adapter = new TabLayoutMainAdapter(getSupportFragmentManager());
 
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
 
                 case R.id.navigation_gifts:
-                    toolbar.setTitle("Rạp Chiếu");
+                    toolbar.setTitle(R.string.title_theater);
 
                     adapter = new TabLayoutMainAdapter(getSupportFragmentManager());
 
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
 
                 case R.id.navigation_cart:
-                    toolbar.setTitle("Tin Tức");
+                    toolbar.setTitle(R.string.title_news);
 
                     adapter = new TabLayoutMainAdapter(getSupportFragmentManager());
 
@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
 
                 case R.id.navigation_profile:
-                    toolbar.setTitle("Cá Nhân");
+                    toolbar.setTitle(R.string.title_user);
 
                     adapter = new TabLayoutMainAdapter(getSupportFragmentManager());
 
