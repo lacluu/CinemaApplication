@@ -111,7 +111,9 @@ public class MainActivity extends AppCompatActivity {
 
                     fragment = dashboardFragment;
                     loadFragment(fragment);
+
                     return true;
+
                 case R.id.navigation_gifts:
                     toolbar.setTitle("Rạp Chiếu");
 
@@ -145,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(fragment);
 
                     return true;
+
                 case R.id.navigation_profile:
                     toolbar.setTitle("Cá Nhân");
 
