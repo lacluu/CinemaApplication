@@ -15,6 +15,7 @@ import com.example.luulac.cinemaapplication.R;
 public class HomeFragment extends Fragment {
 
     private static final String TAG = "HomeFragment";
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
